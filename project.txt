@@ -1,0 +1,28 @@
+Hi,
+Thank you for applying to the Senior Python Engineer at Playstudios. The following exercises need to be written using python :).
+At this exercise you will be required to create a REST api endpoints, you will need to communicate with a 3rd party api & reading and writing to a database of your choice.
+Please make sure to provide full details on how to build and run the code. What installations are needed (python version, packages, external libraries etc..), how to run the install process, how to run the code and example code  (if needed) that we can run to test project.
+
+A huge bonus point is for a person that will do the exercise in AWS lambda architecture.
+NOTE: we are not only going to look on the code itself, we are going to look at the overall design, architecture, decision taken into consideration and more, so if you would like to shed more light, please provide it to us in a document of your choice).
+
+Good luck.
+
+Please build a REST API server (choose the stack you think is best suited for the exercise), we will need to have the following 3 API’s:
+Create new users
+Create basic html for that purpose
+requires email, password & full name
+Save the user info to the database
+Login
+Create basic html for that purpose
+requires email, password
+Validate the user info
+Fail the api on mismatch
+Redirect the user to a page that only logged in users can access
+Reset password
+Create basic html for that purpose
+User will need to provide his email
+An email will be sent to the user email with a reset password link (please pick an email provider with free tier and an API, to send the emails, like sendgrid)
+Clicking on the link will allow the user to change the previous password
+Once the user changed the password, send the user back to the login page
+

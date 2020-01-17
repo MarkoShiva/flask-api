@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+    {% if current_user.is_authenticated %}
+        <h3>Greetings {{ current_user.username }} your name is {{ current_user.fullname}}</h3>
+        <p>Checkout the <a href="{{ url_for('secret') }}">{{ 'secret page' }}</a>
+            that only logged in users can access </p>
+    {% else %}
+        <h3>Greetings anonymous user please <a href="{{ url_for('login') }}">{{ 'log in' }}</a>
+            to access the <a href="{{ url_for('secret') }}">{{ 'secret page' }}</a></h3>
+    {% endif %}
+
+
+
+    {% if form %}
+    {{ wtf.quick_form(form) }}
+    <br>
+    {% endif %}
+{% endblock %}
