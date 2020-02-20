@@ -138,3 +138,5 @@ package-lock.json
 package.json
 .idea/
 sendgrid.env
+codealike.json
+.vscode/
