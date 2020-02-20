@@ -1,6 +1,4 @@
 import os
-from sqlalchemy.dialects import registry
-registry.register("s3sqlite", "sqlalchemy-s3sqlite.dialect", "S3SQLiteDialect")
 
 
 class Config(object):
