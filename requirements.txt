@@ -34,3 +34,4 @@ sqlalchemy-s3sqlite
 #pymysql
 ## needed for docker postgresql
 ## psycopg2-binary
+pytest
